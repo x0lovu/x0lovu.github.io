@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black; 
+}
+
+#splash {
+    position:absolute;
+    top: 0;
+    left: 0;
+    background:black !important;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 2;
+}
+
+#splash.fade {
+    opacity: 0;
+}
+
+.aio {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: transparent;
+}
+
+.profile{
+    border-radius: 300%;
+    height: 180px;
+    width: 185px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #262626;
+}
+
+.w{
+    height: 188px;
+    width: 197px;
+    background-color: #171717;
+    border-radius: 300%;
+    border-color: white;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sm{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+.sm a{
+    display:inline-block;
+    font-size: 25px;
+    background-color: #292828;
+    margin: 10px;
+    border-radius: 100%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.sm a i{
+   transition: 00.4s all;
+}
+
+.sm a:hover > i{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:600px){
+    .sm{
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 71%;
+    }
+    h1{
+        top: 60%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .sm{
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:590px){
+    .sm{
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 73%;
+    }
+    h1{
+        top: 62%;
+    }
+}

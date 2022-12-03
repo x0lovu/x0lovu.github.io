@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>x0#0001</title>
+</head>
+<body>
+    
+    <div id='splash'>
+        <button class="aio"onclick="enter()">Enter</button>
+    </div>
+        <script>
+              function enter()
+              {
+                setTimeout(() => { document.getElementById('splash').classList.toggle('fade'); }, 500);
+                wsz.play()
+                var audio = document.getElementById("wsz");
+                audio.volume = 0.3;
+                sleep(500)
+                setTimeout(w, 500);
+              }
+              function sleep(num) {
+	          let now = new Date();
+	          const stop = now.getTime() + num;
+	          while(true) {
+		      now = new Date();
+		      if(now.getTime() > stop) return;
+	            }
+              }
+              function w(){
+                var elem = document. getElementById("splash"); elem. parentNode. removeChild(elem);
+                $('splash'). remove();
+              }
+
+                 
+        </script>
+        <div class="profile">
+            <img src="assets/profile.jpg" alt="w" class="w">
+        </div>
+        <div class="sm">      
+           <a class="btn" href="https://www.youtube.com/channel/UC2-46HyeZwRaTydmZUDh0Kw" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+           <a class="btn" href="https://www.instagram.com/0x88023/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+           <a class="btn" href="https://www.tiktok.com/@0x886589" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+           <a class="btn" href="https://open.spotify.com/user/314e6v7afwios6ncfvnrtpxufgja?si=500be38da83a4f52" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+           <a class="btn" href="https://wa.me/5545999460451" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div>
+            <audio id="wsz" loop>
+                <source src="assets/Poshlyu Ego Na.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <h1>x0#0001</h1> 
+        </div>
+</body>
+</html>
